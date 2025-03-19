@@ -1,0 +1,16 @@
+{
+    "id": "cargo-binstall",
+    "version": "1.0.0",
+    "name": "cargo-binstall",
+    "description": "Installs a precompiled cargo-binstall version from GitHub releases",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "1.12.1",
+            "description": "The cargo-binstall version to install"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/rust"
+    ]
+}
