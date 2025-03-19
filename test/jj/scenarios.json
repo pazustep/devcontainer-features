@@ -1,0 +1,21 @@
+{
+    "install_jj": {
+        "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+        "features": {
+            "jj": {}
+        }
+    },
+    "set_options": {
+        "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+        "remoteUser": "vscode",
+        "features": {
+            "jj": {
+                "userName": "User Name",
+                "userEmail": "user@example.com",
+                "signingBehavior": "own",
+                "signingBackend": "ssh",
+                "signingKey": "key"
+            }
+        }
+    }
+}

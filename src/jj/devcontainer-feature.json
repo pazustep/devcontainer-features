@@ -1,0 +1,41 @@
+{
+    "id": "jj",
+    "version": "1.0.0",
+    "name": "Jujutsu — a version control system",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "0.27.0",
+            "description": "The jj version to install"
+        },
+        "userName": {
+            "type": "string",
+            "default": "",
+            "description": "Set the `user.name` jj option to the given value"
+        },
+        "userEmail": {
+            "type": "string",
+            "default": "",
+            "description": "Set the `user.email` jj option to the given value"
+        },
+        "signingBehavior": {
+            "type": "string",
+            "default": "",
+            "description": "Set the `signing.behavior` jj option to the given value"
+        },
+        "signingBackend": {
+            "type": "string",
+            "default": "",
+            "description": "Set the `signing.backend` jj option to the given value"
+        },
+        "signingKey": {
+            "type": "string",
+            "default": "",
+            "description": "Set the `signing.key` jj option to the given value"
+        }
+    },
+    "onCreateCommand": "/usr/local/share/jj-set-user-config.sh",
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
